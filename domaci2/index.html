@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Zadatak 2</title>
+  </head>
+
+  <body>
+    <main>
+      <div class="container d-flex">
+        <!--9 buttons w/ audio-->
+        <section class="d-flex buttons">
+          <button class="Q button">Q</button>
+          <button class="W button">W</button>
+          <button class="E button">E</button>
+          <button class="A button">A</button>
+          <button class="S button">S</button>
+          <button class="D button">D</button>
+          <button class="Z button">Z</button>
+          <button class="X button">X</button>
+          <button class="C button">C</button>
+        </section>
+
+        <aside class="aside">
+          <!--Power button-->
+          <p>Power</p>
+          <label class="switch">
+            <input type="checkbox" id="power-switch" />
+            <span class="sliderButton"></span>
+          </label>
+          <p id="sound-name" style="color: red;">Power: OFF</p>
+
+          <!--Volume slider-->
+          <p>Volume: <span id="volume-value">50</span></p>
+          <div class="slidecontainer">
+            <input
+              type="range"
+              min="0"
+              max="100"
+              value="50"
+              class="slider"
+              id="myRange"
+            />
+          </div>
+
+        <!--Bank button-->
+          <p>Bank</p>
+          <label class="switch">
+            <input type="checkbox" id="bank-switch" />
+            <span class="sliderButton"></span>
+          </label>
+        </aside>
+      </div>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
